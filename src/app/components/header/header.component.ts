@@ -16,11 +16,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     </header>
   `,
   styles: [`
-    .header { padding: 27px 0; border-bottom: 1px solid #E0E0E0; margin-bottom: 54px; }
-    .container { max-width: 1150px; margin: 0 auto; padding: 0 20px; }
-    .nav { text-align: right; }
-    .nav a { margin-left: 33px; font-size: 20px; font-weight: 500; color: #000; text-decoration: none; }
-    .nav a.active, .nav a:hover { color: #FF6464; }
+    .header{padding:27px 0;border-bottom:1px solid #e0e0e0;margin-bottom:54px}
+    .container{max-width:1150px;margin:0 auto;padding:0 20px;overflow:hidden}
+    .nav{text-align:right;white-space:nowrap}
+    .nav a{display:inline-block;margin-left:33px;font:500 20px/1 system-ui;color:#000;text-decoration:none}
+    .nav a:first-child{margin-left:0}
+    .nav a.active,.nav a:hover{color:#ff6464}
+    @media(max-width:480px){.nav a{margin-left:20px;font-size:18px}}
   `]
 })
 export class HeaderComponent {}

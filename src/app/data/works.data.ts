@@ -8,7 +8,8 @@ export const WORKS: Work[] = [
     year: 2020,
     category: 'Dashboard, User Experience Design',
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
-    image: 'assets/images/dashboard.jpg'
+    image: '/images/dashboard.png',
+    imageFull: '/images/dashboard-full.png'
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ export const WORKS: Work[] = [
     year: 2018,
     category: 'Illustration',
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
-    image: 'assets/images/portrait.jpg'
+    image: '/images/portrait.png'
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ export const WORKS: Work[] = [
     year: 2018,
     category: 'Typography',
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
-    image: 'assets/images/malayalam.jpg'
+    image: '/images/malayalam.png'
   },
   {
     id: 4,
@@ -35,6 +36,6 @@ export const WORKS: Work[] = [
     year: 2018,
     category: 'Components, Design',
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
-    image: 'assets/images/components.jpg'
+    image: '/images/components.png'
   }
 ];

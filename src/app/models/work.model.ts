@@ -6,4 +6,5 @@ export interface Work {
   category: string;
   description: string;
   image: string;
+  imageFull?: string;
 }

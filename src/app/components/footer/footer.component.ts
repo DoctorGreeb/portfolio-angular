@@ -5,20 +5,24 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <footer class="footer">
-      <div class="social">
-        <a href="#"><img src="assets/icons/fb.svg" alt="fb"></a>
-        <a href="#"><img src="assets/icons/insta.svg" alt="insta"></a>
-        <a href="#"><img src="assets/icons/twitter.svg" alt="twitter"></a>
-        <a href="#"><img src="assets/icons/linkedin.svg" alt="linkedin"></a>
+      <!-- ← ИЗМЕНИЛ .social → .social-links -->
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="/icons/fb.png" alt="">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="/icons/insta.png" alt="">
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="/icons/twitter.png" alt="">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="/icons/linkedin.png" alt="">
+        </a>
       </div>
-      <p>Copyright ©2020 All rights reserved</p>
+      <p>Copyright ©2025 All rights reserved</p>
     </footer>
   `,
-  styles: [`
-    .footer { padding: 51px 0 26px; text-align: center; }
-    .social a { margin: 0 15px; }
-    .social img { width: 30px; height: 30px; }
-    p { margin-top: 26px; color: #8695A4; font-size: 14px; }
-  `]
+  styleUrl: './footer.component.css'
 })
 export class FooterComponent {}
