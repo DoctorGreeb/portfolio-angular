@@ -1,0 +1,39 @@
+<!-- home.component.html -->
+<app-header></app-header>
+
+<main class="home">
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <h1>Hi, I am John,<br>Creative Technologist</h1>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <button class="btn-primary">Download Resume</button>
+      </div>
+      <div class="hero__image">
+        <img src="assets/images/john.png" alt="John">
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-posts">
+    <div class="container">
+      <h2>Recent posts</h2>
+      <div class="posts-grid">
+        <!-- карточки постов -->
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-works">
+    <div class="container">
+      <h2>Featured works</h2>
+      <div class="works-list">
+        @for (work of featuredWorks; track work.id) {
+          <app-work-card [work]="work"></app-work-card>
+        }
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-footer></app-footer>
